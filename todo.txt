@@ -1,0 +1,4 @@
+1. home page with a menu that links to all other pages
+2. contact
+3. projects
+4. have home page contain some kind of animation (can just be super basic)
