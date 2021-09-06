@@ -17,7 +17,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 900px;
+    height: 1100px;
     flex-wrap: wrap
 }
 
@@ -26,7 +26,8 @@ body {
 }
 
 #head {
-    color:yellow
+    color:yellow;
+    text-shadow: 0px 0px 8px black;
 }
 
 .img {
@@ -40,6 +41,7 @@ body {
 .img #image {
     border-radius: 200px;
     width: 50%;
+    border: 5px solid purple;
 }
 
 .img #tooltip {
@@ -54,6 +56,31 @@ body {
 
 .img:hover #tooltip{
     visibility: visible;
+}
+
+#nextspace {
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    padding: 30px;
+    font-size: 25px;
+    border: 5px solid black;
+    border-radius: 10px;
+
+}
+
+#next {
+    max-height: 70%;
+    color: red;
+    background-image: linear-gradient(180deg, yellow, gold, rgb(255, 196, 0));
+}
+
+#next:hover {
+    padding: 35px;
+    padding-bottom: 65px;
 }
 
 .main {
