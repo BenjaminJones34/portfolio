@@ -7,14 +7,26 @@ console.log(image.height)
 
 nextButton.addEventListener("click", ()=> {
     if (currentImage == "dog") {
-        image.src = "images/tww2.png";
-        image.style.maxWidth = "80%";
-        currentImage = "tww2";
-        tooltip.textContent = "This is my favourite game right now. I have clocked in over 1400 hrs";
+        tooltip.style.filter = "blur(20px)";
+        image.style.filter = "blur(40px)";
+        window.setTimeout(()=> {
+            image.src = "images/tww2.png";
+            image.style.width = "80%";
+            image.style.filter = "none";
+            currentImage = "tww2";
+            tooltip.style.filter = "none";
+            tooltip.textContent = "This is my favourite game right now. I have clocked in over 1400 hrs";
+        }, 1000);
     } else {
-        image.src = "images/cairnterrier.png";
-        image.style.minWidth = "50%";
-        currentImage = "dog";
-        tooltip.textContent = "Not actually me, nor my dog, although looks like him";
+        tooltip.style.filter = "blur(20px)";
+        image.style.filter = "blur(40px)";
+        window.setTimeout(()=> {
+            image.src = "images/cairnterrier.png";
+            image.style.width = "60%";
+            image.style.filter = "none";
+            currentImage = "dog";
+            tooltip.style.filter = "none";
+            tooltip.textContent = "Not actually me, nor my dog, although looks like him";
+        }, 1000);
     }
 });

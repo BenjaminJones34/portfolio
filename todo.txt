@@ -3,3 +3,4 @@
 3. projects
 4. have home page contain some kind of cool animation at bottom (can just be super basic)
 5. fix transition of image width and perhaps add transition for tooltip text
+6. play music depending on which image shows?
